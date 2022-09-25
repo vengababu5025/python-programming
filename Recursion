@@ -1,0 +1,69 @@
+#Binary equivalent of a number using recursion
+
+
+n=int(input())
+rem=" "
+while n>0:
+    rem+=str(n%2)
+    n=n//2
+print(rem[::-1])    
+
+
+#Fibonacci Series
+
+
+def fib(x):
+    a=0
+    b=1
+    print(a,b,end=" ")
+    for i in range(1,x-1):
+        c=a+b
+        a=b
+        b=c
+        print(c,end=" ")
+        
+d=int(input())
+fib(d)
+        
+        
+        
+#Odd or Even
+
+
+a=int(input())
+if a%2==0:
+    print("Even!")
+else:
+    print("Odd!")
+    
+    
+   #Factorial
+
+
+a=int(input())
+factorial=1
+if a<0:
+    print("factorial does not exist for negative number")
+elif a==0:
+    print("factorial exists 1")
+else:
+    for i in range(1,a+1):
+        factorial=factorial*i
+    print(factorial)    
+        
+        
+   #LCM of two numbers
+
+
+a=int(input())
+b=int(input())
+c=a*b
+print(c)
+
+
+
+#Decimal to Binary
+
+
+a=int(input())
+print(bin(a)[2:])
