@@ -1,0 +1,99 @@
+#Create a List
+
+n=int(input())
+l=[]
+for i in range(0,n):
+    temp=int(input())
+    l.append(temp)
+print(l)
+
+
+#Largest number in a list
+
+n=int(input())
+l=[]
+for i in range(0,n):
+    temp=int(input())
+    l.append(temp)
+print(max(l))    
+
+
+#Odd or Even
+
+list=[]
+l1=[]
+l2=[]
+n=int(input())
+for i in range(0,n):
+    list.append(int(input()))
+for i in list:
+    if i%2==0:
+        l1.append(i)
+    else:
+        l2.append(i)
+print("the even list",l1)
+print("the odd list",l2)
+        
+        
+        
+ #Array Mean
+
+
+n=int(input())
+l=[]
+sum=0
+for i in range(0,n):
+    temp=int(input())
+    l.append(temp)
+    sum=sum+l[i]
+    avg=sum/n
+print(avg)
+
+
+#Sort the list
+
+
+a=[]
+for i in range(0,2):
+    n=int(input())
+    for j in range(0,n):
+        temp=int(input())
+        a.append(temp)
+a=sorted(a)
+print("Sorted list is:",a)
+
+
+#Remove Duplicates
+
+n=int(input())
+a=[]
+l=[]
+for i in range(1,n+1):
+    a.append(int(input()))
+for i in a:   
+    if i not in l:
+        l.append(i)
+print(l)
+    
+    
+#Second Largest Number
+
+n=int(input())
+l=[]
+for i in range(1,n+1):
+    temp=int(input())
+    l.append(temp)
+    l=sorted(l)
+print(l[-2])
+
+#Swap the numbers
+
+n=int(input())
+l=[]
+for i in range(0,n):
+    temp=int(input())
+    l.append(temp)
+c=l[0]
+l[0]=l[n-1]
+l[n-1]=c
+print(l)
